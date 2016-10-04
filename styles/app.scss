@@ -1,9 +1,12 @@
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
+$c-brandprimary: #3473b5;
+$c-brandwhite: #fff;
+$c-pink: #e57799;
+$c-blue: #72bbe9;
+$c-green: #7abe93;
+$c-yellow: #e5b178;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'reset';
-
-// @import 'adonis';
+@import 'components/grid';

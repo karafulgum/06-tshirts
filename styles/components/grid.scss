@@ -1,0 +1,19 @@
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__item {
+    width: calc(100% / 3 - 1rem - 1rem);
+    margin: 1rem;
+  }
+}
