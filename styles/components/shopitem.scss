@@ -42,6 +42,7 @@
   &:hover {
     .shop-menu__tooltip {
       display: flex;
+      flex-direction: column;
     }
   }
 
@@ -69,8 +70,8 @@
 
     &:hover {
       font-size: 1rem;
-      }
     }
+  }
 }
 
 .shop-menu__tooltip-item--color-red {
@@ -104,9 +105,54 @@
     font-size: 1rem;
   }
 }
-
 @media (max-width: 768px) and (min-width: 460px) {
   .shop-item {
     flex-direction: row;
+
+    &__frame {
+      margin: auto 0;
+      padding: 1rem;
+    }
+
+    &__details {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+
+    &__actions-btn {
+      border-right: 0;
+      border-left: 3px $c-brandprimary solid;
+
+      &:first-of-type {
+        border-top: 0;
+      }
+    }
+  }
+
+  .shop-menu {
+    &:hover {
+      .shop-menu__tooltip {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__tooltip {
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      // flex-direction: row;
+      width: 2.5rem;
+      margin: 0;
+    }
+
+    &__tooltip-item {
+      border-right: 0;
+      border-bottom: 3px $c-brandprimary solid;
+    }
   }
 }
