@@ -1,6 +1,7 @@
 .shop-item {
   min-width: 10rem;
   max-width: 20rem;
+  margin: 0;
   border: 3px $c-brandprimary solid;
 
   &__details {
