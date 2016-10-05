@@ -51,21 +51,41 @@
     border-top: 3px $c-brandprimary solid;
     border-right: 3px $c-brandprimary solid;
     border-left: 3px $c-brandprimary solid;
+
+    &:hover {
+      font-size: 1rem;
+    }
   }
 }
 
 .shop-menu__tooltip-item--color-red {
   color: $c-pink;
+
+  &:hover {
+    font-size: 1rem;
+  }
 }
 
 .shop-menu__tooltip-item--color-blue {
   color: $c-blue;
+
+  &:hover {
+    font-size: 1rem;
+  }
 }
 
 .shop-menu__tooltip-item--color-yellow {
   color: $c-yellow;
+
+  &:hover {
+    font-size: 1rem;
+  }
 }
 
 .shop-menu__tooltip-item--color-green {
   color: $c-green;
+
+  &:hover {
+    font-size: 1rem;
+  }
 }
