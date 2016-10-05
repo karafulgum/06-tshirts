@@ -5,7 +5,8 @@
 }
 
 .container {
-  max-width: 60rem;
+  min-width: 20%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -20,9 +21,10 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 400px) {
   .container {
-    max-width: 60rem;
+    min-width: 20%;
+    max-width: 80%;
     margin: 0 auto;
   }
 
