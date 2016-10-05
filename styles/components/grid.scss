@@ -14,8 +14,8 @@
   flex-wrap: wrap;
 
   &__item {
-    min-width: 10rem;
     width: calc(100% / 3 - 1rem - 1rem);
+    min-width: 10rem;
     margin: 1rem;
   }
 }

@@ -1,5 +1,7 @@
 .shop-item {
   border: 3px $c-brandprimary solid;
+  max-width: 20rem;
+  min-width: 10rem;
 
   &__details {
     text-align: center;
