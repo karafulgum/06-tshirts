@@ -32,22 +32,24 @@
   position: relative;
 
   &__tooltip {
-    display: flex;
     position: absolute;
     bottom: 100%;
     left: 50%;
-    flex-direction: column;
-    justify-content: space-around;
     margin: 0;
     transform: translate(-50%, 0);
+    background: $c-brandwhite;
+
+    &:first-of-type {
+      border-bottom: 3px $c-brandprimary solid;
+    }
   }
 
   &__tooltip-item {
-    padding: 0.5rem 0.5rem 0;
+    padding: 0.5rem;
     border-top: 3px $c-brandprimary solid;
     border-right: 3px $c-brandprimary solid;
     border-left: 3px $c-brandprimary solid;
-        }
+  }
 }
 
 .shop-menu__tooltip-item--color-red {
