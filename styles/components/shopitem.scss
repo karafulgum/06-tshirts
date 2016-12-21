@@ -1,0 +1,167 @@
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  margin: 0;
+  border: 3px $c-brandprimary solid;
+
+  &__details {
+    text-align: center;
+  }
+
+  &__description {
+    padding: 0 0.5rem;
+  }
+
+  &__frame {
+    margin: 1rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__actions-btn {
+    flex-grow: 1;
+    border: 0;
+    border-top: 3px $c-brandprimary solid;
+    border-right: 3px $c-brandprimary solid;
+    background: $c-brandwhite;
+    color: $c-brandprimary;
+
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+}
+
+.shop-menu {
+  position: relative;
+
+  &:hover {
+    .shop-menu__tooltip {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    flex-direction: column;
+    margin: 0;
+    transform: translate(-50%, 0);
+    background: $c-brandwhite;
+
+    &:first-of-type {
+      border-bottom: 3px $c-brandprimary solid;
+    }
+  }
+
+  &__tooltip-item {
+    padding: 0.5rem;
+    border-top: 3px $c-brandprimary solid;
+    border-right: 3px $c-brandprimary solid;
+    border-bottom: 0;
+    border-left: 3px $c-brandprimary solid;
+
+    &:hover {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__tooltip-item--color-red {
+    color: $c-pink;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &__tooltip-item--color-blue {
+    color: $c-blue;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &__tooltip-item--color-yellow {
+    color: $c-yellow;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &__tooltip-item--color-green {
+    color: $c-green;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 460px) {
+  .shop-item {
+    flex-direction: row;
+
+    &__frame {
+      margin: auto 0;
+      padding: 1rem;
+    }
+
+    &__details {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+
+    &__actions-btn {
+      border-right: 0;
+      border-left: 3px $c-brandprimary solid;
+
+      &:first-of-type {
+        border-top: 0;
+      }
+    }
+  }
+
+  .shop-menu {
+    &:hover {
+      .shop-menu__tooltip {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__tooltip {
+      display: none;
+      top: 50%;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      flex-direction: row;
+      width: auto;
+      margin: 0;
+      transform: translate(0, -50%);
+      border-right: 3px $c-brandprimary solid;
+
+      &:first-of-type {
+        border-bottom: 0;
+      }
+    }
+
+    &__tooltip-item {
+      border-right: 0;
+      border-bottom: 3px $c-brandprimary solid;
+      background: $c-brandwhite;
+    }
+  }
+}

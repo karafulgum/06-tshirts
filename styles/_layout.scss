@@ -1,0 +1,32 @@
+.section {
+  padding: 1rem;
+  background: $c-brandwhite;
+  color: $c-brandprimary;
+}
+
+.container {
+  min-width: 20%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-grow: 1;
+    width: calc(100% / 3 - 1rem - 1rem);
+    min-width: 9rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 460px) {
+  .grid {
+    &__item {
+      width: calc(100% / 1 - 1rem - 1rem);
+      margin: 1rem;
+    }
+  }
+}
