@@ -30,6 +30,11 @@
     background: $c-brandwhite;
     color: $c-brandprimary;
 
+    &:hover {
+      background: $c-brandprimary;
+      // color: $c-brandwhite;
+    }
+
     &:last-of-type {
       border-right: 0;
     }
